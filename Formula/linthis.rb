@@ -1,28 +1,28 @@
 class Linthis < Formula
   desc "A fast linter and formatter"
   homepage "https://github.com/zhlinh/linthis"
-  version "0.27.0"
+  version "0.28.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zhlinh/linthis/releases/download/v#{version}/linthis-aarch64-apple-darwin.tar.gz"
-      sha256 "2d64a28ed95e5f8cf0c4587af6f614fdb13b89b1802245bd6a160b8fd42ce765" # darwin-arm64
+      sha256 "2a06a97d04a5f9b901e352ed33f481404e947815fd51ad39e559f9bcdcf1ac11" # darwin-arm64
     end
     if Hardware::CPU.intel?
       url "https://github.com/zhlinh/linthis/releases/download/v#{version}/linthis-x86_64-apple-darwin.tar.gz"
-      sha256 "cad18a8c999ec4177891697558ebe944ecd3a60cdaab85437e323e6999a7c473" # darwin-x86_64
+      sha256 "4c8407c53381b277784bc858246a56366ff410c9527ba88a76022023e5eace30" # darwin-x86_64
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/zhlinh/linthis/releases/download/v#{version}/linthis-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "60e44491a33ead3c5e94f3256705b2d39b8b942c55463434901b65cdd6a43af7" # linux-arm64
+      sha256 "fd01973b19b368451e2e69fc59501858340870dfc68806ef6b0bd98ee7fcdfdb" # linux-arm64
     end
     if Hardware::CPU.intel?
       url "https://github.com/zhlinh/linthis/releases/download/v#{version}/linthis-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0f71e297dd7c258fbffc736d0a77f447709026f64c261a93c16bb983173e5d28" # linux-x86_64
+      sha256 "b9134269c5e92c1310bb31d6ce0f2f20786b27ea96ac690035867bf97afc6dec" # linux-x86_64
     end
   end
 
